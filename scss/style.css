@@ -1,0 +1,150 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1, h2, h3, p, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  background-color: #090b1a;
+}
+
+body main {
+  width: 330px;
+  margin: 90px auto;
+  background-color: #1b1938;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (min-width: 480px) {
+  body main {
+    width: 1115px;
+    height: 446px;
+    margin: 175px auto;
+    display: -ms-grid;
+    display: grid;
+    gap: 2rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+body main .image {
+  position: relative;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 330px;
+  -webkit-filter: contrast(110%);
+          filter: contrast(110%);
+}
+
+@media screen and (min-width: 480px) {
+  body main .image {
+    background-size: contain;
+    background-position: 0 0;
+    height: 482px;
+    width: 540px;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+}
+
+body main .image::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(113, 28, 166, 0.671);
+  height: 100%;
+  width: 100%;
+}
+
+body main .text {
+  padding: 45px 34px;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  body main .text {
+    text-align: left;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    padding: 75px 75px;
+  }
+}
+
+body main .text h1 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 480px) {
+  body main .text h1 {
+    margin-bottom: 22px;
+    font-size: 36px;
+  }
+}
+
+body main .text h1 span {
+  color: #aa5cdb;
+}
+
+body main .text p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 480px) {
+  body main .text p {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 480px) {
+  body main .text .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4rem;
+  }
+}
+
+body main .text .services h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+body main .text .services p {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 480px) {
+  body main .text .services p {
+    margin: 0;
+  }
+}
+
+body main .text .services .last {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
